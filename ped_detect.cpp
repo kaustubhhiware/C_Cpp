@@ -7,6 +7,8 @@ using namespace cv;
 int main (int argc, const char * argv[])
 {
     VideoCapture cap("vid.mp4");
+	//need to unzip vid.mp4.zip first
+
     cap.set(CV_CAP_PROP_FRAME_WIDTH, 320);
     cap.set(CV_CAP_PROP_FRAME_HEIGHT, 240);    
     if (!cap.isOpened())
